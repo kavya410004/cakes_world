@@ -17,6 +17,9 @@ body{
     font-size: 1.25rem;
     margin-left: 5vw;
 }
+.navbar{
+    background-color: #00000000;
+}
 .navbar-brand{
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
@@ -38,7 +41,7 @@ body{
 header{  
     background-color: rgba(0, 0, 0, 0.6);
     padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 7%;
 }
 .caption-1{
     color: #dfdfdf;
@@ -78,7 +81,7 @@ header{
 .caption-3{
     font-family: 'Pacifico', cursive;
     color: #cf2227;
-    font-size: calc(0.7rem + 4vw);
+    font-size: calc(1.2rem + 3vw);
     margin-bottom: 5%;
 }
 .description{
@@ -91,6 +94,7 @@ header{
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10% 15%;
 }
+
 .menu-container{
     height: 800px;
     display: grid;
@@ -99,6 +103,17 @@ header{
     grid-template-rows: 1fr 1fr 1fr;
     margin: 5rem 0;
 }
+@media(max-width:1216px){
+    .menu-container{
+        display: none;
+    }
+}
+@media(min-width:1216px){
+    .mob-container{
+        display: none;
+    }
+}
+
 .menu-img{
     max-width: 100%;
     transition: all 0.4s;
@@ -110,10 +125,6 @@ header{
     right: 50%;
 }
 .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
-
-    
-    /* Add show for the items */
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
     box-shadow: rgba(92, 110, 127, 0.658) 6px 2px 16px 0px, rgb(209, 205, 194) -6px -2px 16px 0px;
     overflow: hidden;
     border-radius: 15px;
@@ -159,9 +170,16 @@ header{
     grid-row: 3 / 4;
 }
 .item-6:hover .menu-img-6{
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
-
+.img{
+    height: 30vh;
+    border-radius: 10px;
+    background-size: cover;     
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    box-shadow: rgba(92, 110, 127, 0.658) 6px 2px 16px 0px, rgb(209, 205, 194) -6px -2px 16px 0px;
+}
 footer{
     background-color:#810000;
     padding: 5%;
