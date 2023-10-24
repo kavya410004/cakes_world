@@ -12,6 +12,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 .nav-item{
     font-size: 1.25rem;
